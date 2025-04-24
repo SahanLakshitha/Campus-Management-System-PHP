@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Buttons with Heading</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        .content-container {
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .button-container a {
+            display: inline-block;
+            width: 250px; 
+            text-decoration: none;
+            padding: 15px;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            font-size: 18px;
+            text-align: center; 
+            transition: background-color 0.3s ease;
+        }
+
+        .button-container a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content-container">
+        <h2>Welcome to the Campus Management System</h2>
+
+        <div class="button-container">
+            <a href="register.php">Register a Student</a>
+            <a href="search.php">Search for a Student</a>
+            <a href="update.php">Update Student Details</a>
+            <a href="delete.php">Delete a Student</a>
+        </div>
+    </div>
+
+</body>
+</html>
